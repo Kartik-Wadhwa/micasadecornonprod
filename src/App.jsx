@@ -608,7 +608,7 @@ function App() {
                       <div className="mt-6 flex items-center justify-between border-t border-[#c5b7aa]/60 pt-4 text-xs uppercase tracking-[0.16em] text-accent">
                         <span>{isInteractive ? 'View gallery' : 'Tailored scope'}</span>
                         <span className="transition-transform duration-300 group-hover:translate-x-1">
-                          ->
+                          →
                         </span>
                       </div>
                     </div>
