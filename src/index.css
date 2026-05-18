@@ -15,6 +15,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -26,6 +33,7 @@ body {
     linear-gradient(180deg, #fbf7f3 0%, var(--bg) 42%, #f7f2ed 100%);
   color: var(--ink);
   font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
 }
 
 body::before {
@@ -46,12 +54,25 @@ a {
   text-decoration: none;
 }
 
+section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
 img {
   display: block;
 }
 
 ::selection {
   background: rgba(141, 117, 91, 0.2);
+}
+
+:where(a, button, input, select, textarea, [role='button']) {
+  outline: none;
+}
+
+:where(a, button, input, select, textarea, [role='button']):focus-visible {
+  outline: 2px solid rgba(141, 117, 91, 0.95);
+  outline-offset: 3px;
 }
 
 @layer base {
@@ -67,8 +88,8 @@ img {
 
 @layer components {
   .glass-panel {
-    @apply rounded-[2rem] border border-white/50 shadow-glass backdrop-blur-xl;
-    background-color: rgba(255, 250, 244, 0.28);
+    @apply rounded-[2rem] border border-white/50 shadow-glass backdrop-blur-md;
+    background-color: rgba(255, 250, 244, 0.22);
   }
 
   .eyebrow {
@@ -81,7 +102,7 @@ img {
   }
 
   .button-primary {
-    @apply inline-flex items-center justify-center rounded-full border border-transparent bg-espresso px-6 py-3 text-sm uppercase tracking-[0.16em] text-white transition duration-300 hover:-translate-y-0.5;
+    @apply inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-espresso px-6 py-3 text-sm uppercase tracking-[0.16em] text-white transition duration-300 hover:-translate-y-0.5;
   }
 
   .button-primary:hover {
@@ -89,8 +110,8 @@ img {
   }
 
   .button-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-300 hover:-translate-y-0.5;
-    background-color: rgba(255, 255, 255, 0.12);
+    @apply inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-white/40 px-6 py-3 text-sm uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-300 hover:-translate-y-0.5;
+    background-color: rgba(255, 255, 255, 0.18);
   }
 
   .button-secondary:hover {
@@ -107,7 +128,7 @@ img {
 
   .field-input {
     @apply rounded-2xl border border-white/40 px-4 py-3 text-sm text-espresso outline-none backdrop-blur-sm transition focus:border-[#9d8468] focus:ring-2;
-    background-color: rgba(255, 255, 255, 0.38);
+    background-color: rgba(255, 255, 255, 0.58);
   }
 
   select.field-input {
@@ -138,7 +159,11 @@ img {
   }
 
   .field-input:focus {
-    background-color: rgba(255, 255, 255, 0.54);
+    background-color: rgba(255, 255, 255, 0.74);
     --tw-ring-color: rgba(212, 192, 167, 0.6);
+  }
+
+  .field-error {
+    @apply text-sm text-[#8d4d3f];
   }
 }
