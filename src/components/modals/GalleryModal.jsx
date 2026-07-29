@@ -189,9 +189,9 @@ function GalleryModal({
                 >
                   Prev
                 </button>
-                <div className="text-center text-xs uppercase tracking-[0.16em] text-taupe">
+                {/* <div className="text-center text-xs uppercase tracking-[0.16em] text-taupe">
                   Swipe, use arrow keys, or tap a thumbnail
-                </div>
+                </div> */}
                 <button
                   type="button"
                   onClick={onNext}

@@ -10,6 +10,7 @@ function Header({
   onCloseMenu,
 }) {
   const headerRef = useRef(null);
+  const whatsappHref = 'https://wa.me/918076556700';
 
   useEffect(() => {
     if (!menuOpen) {
@@ -77,7 +78,7 @@ function Header({
             href="#top"
             className="shrink-0 whitespace-nowrap font-display text-2xl tracking-[0.12em] text-espresso sm:text-3xl"
           >
-            Mi Casa Decor
+            Orchid Design
           </a>
 
           <div className="hidden items-center gap-7 lg:flex">
@@ -94,8 +95,16 @@ function Header({
           </div>
 
           <div className="hidden shrink-0 lg:block">
-            <a href="#inquiry" className="button-primary">
-              Book a Consultation
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-white/65 text-[#1f8a4c] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+              aria-label="Chat with us on WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
+                <path d="M20.52 3.48A11.8 11.8 0 0 0 12.04 0C5.48 0 .14 5.34.14 11.9c0 2.09.55 4.13 1.6 5.92L0 24l6.32-1.66a11.86 11.86 0 0 0 5.67 1.44h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.18-3.38-8.4Zm-8.48 18.28h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.75.98 1-3.66-.23-.37A9.86 9.86 0 0 1 2.14 11.9c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.11 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.46-4.44 9.86-9.88 9.86Zm5.75-7.41c-.31-.16-1.84-.91-2.12-1.01-.28-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.67.08-.31-.16-1.32-.49-2.51-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.7-1.69-.96-2.31-.25-.6-.5-.52-.7-.53l-.6-.01c-.21 0-.54.08-.82.39-.28.31-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.16.21 2.11 3.22 5.1 4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.28-.2-.59-.36Z" />
+              </svg>
             </a>
           </div>
 
@@ -143,11 +152,16 @@ function Header({
                   </a>
                 ))}
                 <a
-                  href="#inquiry"
-                  className="button-primary mt-2 justify-center text-center"
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-white/65 text-[#1f8a4c] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  aria-label="Chat with us on WhatsApp"
                   onClick={onCloseMenu}
                 >
-                  Book a Consultation
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
+                    <path d="M20.52 3.48A11.8 11.8 0 0 0 12.04 0C5.48 0 .14 5.34.14 11.9c0 2.09.55 4.13 1.6 5.92L0 24l6.32-1.66a11.86 11.86 0 0 0 5.67 1.44h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.18-3.38-8.4Zm-8.48 18.28h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.75.98 1-3.66-.23-.37A9.86 9.86 0 0 1 2.14 11.9c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.11 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.46-4.44 9.86-9.88 9.86Zm5.75-7.41c-.31-.16-1.84-.91-2.12-1.01-.28-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.67.08-.31-.16-1.32-.49-2.51-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.7-1.69-.96-2.31-.25-.6-.5-.52-.7-.53l-.6-.01c-.21 0-.54.08-.82.39-.28.31-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.16.21 2.11 3.22 5.1 4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.28-.2-.59-.36Z" />
+                  </svg>
                 </a>
               </div>
             </motion.div>

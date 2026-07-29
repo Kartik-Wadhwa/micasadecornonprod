@@ -73,9 +73,9 @@ function ServicesSection({ onOpenGallery }) {
                       {service.title}
                     </h3>
                     <div className="mt-4 flex flex-wrap gap-2 text-[0.68rem] uppercase tracking-[0.16em] text-accent">
-                      <span className="rounded-full border border-[#d5c9bc] bg-white/55 px-3 py-1">
+                      {/* <span className="rounded-full border border-[#d5c9bc] bg-white/55 px-3 py-1">
                         {service.gallery.length} image gallery
-                      </span>
+                      </span> */}
                       <span className="rounded-full border border-[#d5c9bc] bg-white/55 px-3 py-1">
                         {service.deliverables}
                       </span>

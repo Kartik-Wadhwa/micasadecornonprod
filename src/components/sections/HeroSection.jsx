@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import homeHero from '../../../images/Home.jpg';
-import { heroTrustItems } from '../../data/siteContent';
+// import { heroTrustItems } from '../../data/siteContent';
 
 function HeroSection({ heroY, heroScale, heroOpacity }) {
   const shouldReduceMotion = useReducedMotion();
@@ -83,12 +83,12 @@ function HeroSection({ heroY, heroScale, heroOpacity }) {
             </a>
             <a
               href="#inquiry"
-              className="button-secondary border-espresso/40 bg-white/70 px-4 py-2 text-xs tracking-[0.14em] text-espresso hover:bg-white/85 sm:px-5 sm:py-2.5"
+              className="button-secondary border-espresso/40 bg-white/45 px-4 py-2 text-xs tracking-[0.14em] text-espresso hover:bg-white/85 sm:px-5 sm:py-2.5"
             >
               Start Your Project
             </a>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             variants={textItem}
             className="mt-10 grid max-w-3xl gap-4 sm:grid-cols-3"
           >
@@ -103,7 +103,7 @@ function HeroSection({ heroY, heroScale, heroOpacity }) {
                 <p className="mt-2 text-sm leading-6 text-taupe">{item.label}</p>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

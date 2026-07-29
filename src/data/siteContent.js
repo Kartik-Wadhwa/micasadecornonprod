@@ -19,6 +19,34 @@ import styling3Image from '../../images/styling3.jpg';
 import styling4Image from '../../images/styling4.jpg';
 import styling5Image from '../../images/styling5.jpg';
 import styling6Image from '../../images/styling6.jpg';
+import sonepatxImage from '../../images/sonepatkothi.png';
+import sonepat from '../../images/sonepat.png';
+import sonepat1Image from '../../images/sonepat1.png';
+import sonepat2Image from '../../images/sonepat2.png';
+import sonepat3Image from '../../images/sonepat3.png';
+import sonepat4Image from '../../images/sonepat4.png';
+import sonepat5Image from '../../images/sonepat5.png';
+import sonepat6Image from '../../images/sonepat6.png';
+import Noida from '../../images/Noida1.jpeg';
+import N2 from '../../images/N2.jpeg';
+import N3 from '../../images/N3.jpeg';
+import N4 from '../../images/N4.jpeg';
+import N5 from '../../images/N5.jpeg';
+import N6 from '../../images/N6.jpeg';
+import R1 from '../../images/R1.jpeg';
+import R2 from '../../images/R2.jpeg';
+import R3 from '../../images/R3.jpeg';
+import R4 from '../../images/R4.jpeg';
+import R5 from '../../images/R5.jpeg';
+import R6 from '../../images/R6.jpeg';
+import R7 from '../../images/R7.jpeg';
+import G1 from '../../images/G1.jpeg';
+import G2 from '../../images/G2.jpeg';
+import G4 from '../../images/G4.jpeg';
+import G5 from '../../images/G5.jpeg';
+import G6 from '../../images/G6.jpeg';
+import G7 from '../../images/G7.jpeg';
+import G8 from '../../images/G8.jpeg';
 
 export const navLinks = [
   { label: 'About', href: '#about' },
@@ -29,11 +57,11 @@ export const navLinks = [
   { label: 'Inquiry', href: '#inquiry' },
 ];
 
-export const heroTrustItems = [
-  { value: '42', label: 'completed homes and boutique spaces' },
-  { value: '11', label: 'cities across India' },
-  { value: '48 hrs', label: 'typical first response' },
-];
+// export const heroTrustItems = [
+//   { value: '42', label: 'completed homes and boutique spaces' },
+//   { value: '11', label: 'cities across India' },
+//   { value: '48 hrs', label: 'typical first response' },
+// ];
 
 export const aboutHighlights = [
   'Material-led palettes rooted in stone, timber, linen, and bronze.',
@@ -112,66 +140,96 @@ export const services = [
 
 export const works = [
   {
-    title: 'The Observatory Residence',
-    type: 'Penthouse Renovation',
-    location: 'New Delhi',
+    title: 'Kapoors Residence',
+    type: 'Villa Renovation',
+    location: 'Sonepat, Haryana',
     summary:
-      'A penthouse reshaped around long city views, soft stone finishes, and tailored joinery that keeps the rooms expansive but warm.',
+      'A villa reshaped around long city views, soft stone finishes, and tailored joinery that keeps the rooms expansive but warm.',
     highlights: [
       'Reworked circulation to open the living and dining zones.',
       'Layered timber, limestone, and antique bronze accents.',
       'Custom lighting and styling designed for evening entertaining.',
     ],
-    image:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80',
+    image: './../images/sonepatkothi.png',
+    gallery: [
+      { src: sonepat, alt: 'Living area for The Kapoor Residence' },
+      { src: sonepat1Image, alt: 'Drawing romm area for the Residence' },
+      { src: sonepat3Image, alt: 'Kitchen detail for The Kapoor Residence' },
+      { src: sonepat4Image, alt: 'Bedroom finish for The Kapoor Residence' },
+      { src: sonepat5Image, alt: 'WashBasin finish for the bathroom' },
+      { src: sonepat6Image, alt: 'Bathroom finish for The Kapoor Residence' },
+    ],
     className: 'md:col-span-7 md:row-span-2',
     heightClass: 'min-h-[28rem] md:min-h-[39rem]',
   },
   {
-    title: 'Marina Light House',
-    type: 'Coastal Apartment',
-    location: 'Goa',
+    title: 'Modern Home',
+    type: '3BHK Apartment',
+    location: 'Rohini, Delhi',
     summary:
-      'A breezy coastal apartment with brighter circulation, restrained textures, and layered furnishings that feel light through the year.',
+      'A modern apartment with a neutral palette, layered textures, and a focus on natural light and circulation.',
     highlights: [
-      'Salt-safe finishes chosen for longevity near the shoreline.',
+      'A design that balances functionality with aesthetic appeal.',
       'Relaxed built-ins and linen-upholstered seating for guests.',
-      'A palette tuned to daylight, sea air, and low-maintenance living.',
+      'A palette tuned to daylight, blue tones, and low-maintenance living.',
     ],
-    image:
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
+    image: R2,
+    gallery: [
+      { src: R1, alt: 'Sample living room for Modern house' },
+      { src: R2, alt: 'Sample living room for Modern house' },
+      { src: R3, alt: 'Sample dining room and decor' },
+      { src: R4, alt: 'Sample dining room and decor' },
+      { src: R5, alt: 'Sample bedroom room for Modern house' },
+      { src: R6, alt: 'Dressing Table Design' },
+      { src: R7, alt: 'Living and Dining Area' },
+    ],
     className: 'md:col-span-5',
     heightClass: 'min-h-[22rem]',
   },
   {
-    title: 'Atelier Courtyard',
-    type: 'Boutique Hospitality',
-    location: 'Jaipur',
+    title: 'Indian Traditional Home',
+    type: '2BHK Apartment',
+    location: 'Gurgaon, Haryana',
     summary:
-      'A hospitality concept balancing handcrafted detail with quiet circulation so guests notice the atmosphere before the ornament.',
+      'A Indian traditional home with a focus on authentic craftsmanship and cultural elements.',
     highlights: [
-      'Arrival sequence designed around texture, scent, and shadow.',
+      'On Arrival there will be a warm welcome with a traditional front door with elephant carvings',
       'Material language translated into guestrooms and shared spaces.',
       'Loose furniture and styling selected for durability and softness.',
     ],
-    image:
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+    image:G1,
+    gallery: [
+      { src:  G2, alt: 'A Basic Interior View for Living Room' },
+      { src: G4, alt: 'Kitchen Detail for Indian Traditional Home' },
+      { src: G5, alt: 'Space Optimization with Natural Light and book shelves' },
+      { src: G6, alt: 'Temple for the home' },
+      { src: G7, alt: 'Bedroom finish that reflects the traditional aesthetic' },
+      { src: G8, alt: 'Bathroom design for the home' },
+    ],
     className: 'md:col-span-5',
     heightClass: 'min-h-[22rem]',
   },
   {
-    title: 'The Quiet Villa',
-    type: 'Ground-Up Styling',
-    location: 'Bengaluru',
+    title: 'The Quiet Appartment',
+    type: 'A Luxury Appartment',
+    location: 'Noida, Uttar Pradesh',
     summary:
-      'A layered styling project for a newly completed villa, bringing warmth, proportion, and a more lived-in sense of character to the architecture.',
+      'A project that is close to our hearts, where we have created a space that is both luxurious and comfortable, with a focus on natural materials and a neutral palette.',
     highlights: [
       'Room-by-room styling plan aligned with the home’s architecture.',
       'Art, objects, and textiles sourced to soften large volumes.',
       'Final installation edited for ease, rhythm, and everyday use.',
     ],
     image:
-      'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1600&q=80',
+      Noida,
+    gallery: [
+      { src: Noida, alt: 'Sample styled corner for The Quiet Villa' },
+      { src: N2, alt: 'Bedroom Design for The Quiet Villa' },
+      { src: N3, alt: 'Living Room Composition for the home' },
+      { src: N4, alt: 'Kitchen Design that reflects the luxurious aesthetic' },
+      { src: N5, alt: 'Living Area that feels inviting' },
+      { src: N6, alt: 'Office space for The Quiet Villa' },
+    ],
     className: 'md:col-span-7',
     heightClass: 'min-h-[24rem]',
   },
@@ -207,20 +265,20 @@ export const processSteps = [
 export const testimonials = [
   {
     quote:
-      'Mi Casa Decor transformed our apartment into something serene and unmistakably ours. Every room feels composed without ever feeling precious.',
-    name: 'Ananya Mehra',
-    role: 'Private Residence, Mumbai',
+      'Orchid Design has design my home with a quiet, enduring aesthetic that feels personal and collected. The process was seamless, and the final result exceeded my expectations.',
+    name: 'Ritika Mehta',
+    role: 'Rohini, New Delhi',
   },
   {
     quote:
-      'Their process was elegant from start to finish. They held the vision through construction and the final styling made the space sing.',
+      'This is my first time experience with Interior Designer and I am very happy with the work done by Orchid Design. They have a great sense of design and they have transformed my home into a beautiful space.',
     name: 'Rohan Kapoor',
-    role: 'Weekend Home, Alibaug',
+    role: 'Sonepat, Haryana',
   },
   {
     quote:
-      'What impressed us most was restraint. Nothing felt overdesigned, yet everything felt considered. Guests notice the mood before the details.',
+      'Sach me Maza aa gaya. Orchid Design had done a great job in designing my home. I am very happy with the service and highly recommend other people to hire Orchid Design for their interior design needs.',
     name: 'Leena Arora',
-    role: 'Hospitality Founder, Jaipur',
+    role: 'Noida, Uttar Pradesh',
   },
 ];
