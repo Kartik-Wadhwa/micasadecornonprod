@@ -150,7 +150,7 @@ export const works = [
       'Layered timber, limestone, and antique bronze accents.',
       'Custom lighting and styling designed for evening entertaining.',
     ],
-    image: '../../images/sonepatkothi.png',
+    image: sonepatxImage,
     gallery: [
       { src: sonepat, alt: 'Living area for The Kapoor Residence' },
       { src: sonepat1Image, alt: 'Drawing romm area for the Residence' },
